@@ -1,8 +1,8 @@
 #include<stdio.h>
 int i,temp,key,length,a[20];
 void main(){
-int b=10;
-printf("%d",b);
+
+
 
 
 printf(" no of elements");
