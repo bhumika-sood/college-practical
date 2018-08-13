@@ -1,0 +1,132 @@
+html,
+body{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	
+}
+.wrap {
+	height:100%;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	background:#02776a;
+	
+	text-align:center;
+}
+header {
+	background:#56c4b7;
+	box-shadow:0 .5em .5em #111;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:900;
+	width:100%;
+}
+header label{
+	color:black;
+	cursor:pointer;
+	display:inline-block;
+	line-height:3em;
+	font-size:20;
+	font-weight:bold;
+	padding:0 1em;
+	}
+header label:hover{
+	background:#02776a;
+	color:#fff;
+}
+.slide{
+	height:100%;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:100%;
+	z-index:10;
+	padding:4em 0;
+	background-color:#120103;
+	background-position:50% 50%;
+	background-size:cover;
+	transition:left 0s .75s;
+}
+.slide-one {background-color:#ccf2ff;}
+.slide-two {background-color:#ccf2ff;}
+.slide-three {background-color:#ccf2ff;}
+.slide-four {background-color:#ccf2ff;}
+.slide-five {background-color:#ccf2ff;}
+.slide-six {background-color:#ccf2ff;}
+.slide-seven {background-color:#ccf2ff;}
+.slide-eight {background-color:#ccf2ff;}
+.slide-nine{background-color:#ccf2ff;}
+.slide-ten{background-color:#ccf2ff;}
+.slide-eleven {background-color:#ccf2ff;}
+.slide-twelve {background-color:#ccf2ff;}
+.slide-thirteen {background-color:#ccf2ff;}
+
+[id^="slide"]:checked + .slide{
+		left:0;
+		z-index:100;
+		transition: left .65s ease-out;
+	}
+.slide h1 {
+	opacity:0;
+	transform: translateY(100%);
+	transition: transform .5s .5s, opacity .5s;
+}
+
+[id^="slide"]:checked + .slide h1{
+	opacity:1;
+	transform:translateY(0);
+	transition:all .5s .5s;
+}
+.tab{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	 background-color: #10bca8; /* Green */
+    color: white;
+}
+.button1{
+	padding: 10px 24px;
+	background-color:#067266;
+	color:white;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+.button1:active {
+  background-color: #067266;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+iframe{
+    border-width: 2px;
+	border-color:#70dbdb;
+}
+table{
+	background:linear-gradient(#02776a,#56c4b7);
+}
+.credits
+{
+	text-align:right;
+	background-color:#02776a;
+}
+	.button2:hover {
+	 background-color: #10bca8; /* Green */
+    color: white;
+}
+.button2{
+	background-color:#067266;
+	color:white;
+	border-radius: 0px;
+	transition-duration: 0.4s;
+}
+.button2:active {
+  background-color: #067266;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
